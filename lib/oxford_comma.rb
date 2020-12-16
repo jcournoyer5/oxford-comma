@@ -4,5 +4,3 @@ def oxford_comma(array)
     end
 end
 array.join.last
-end
-end
