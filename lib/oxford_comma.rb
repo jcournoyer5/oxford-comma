@@ -3,4 +3,4 @@ def oxford_comma(array)
         oxford_comma << (" and ")
     end
 end
-array.join.last
+Array.join.last
