@@ -1,13 +1,8 @@
 def oxford_comma(array)
-    array.join
-    if array.count == 2
-       array << "and"
-    
-    elsif array.count == 3
-        array.split << "and"
-            
-    else array.count > 3
-            array.split
-    
-    end
-end 
+    if array.length == 2 
+ return   "#{array.first} and #{array.last}"
+    elsif array.length > 2
+    array[-1].insert(0, "and ")
+    end 
+  array.join(", ")
+end
